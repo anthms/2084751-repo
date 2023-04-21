@@ -1,0 +1,11 @@
+name: Deploy to Environment
+
+on:
+  workflow_dispatch:
+
+jobs:
+  job-name:
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - run: echo "Completed"
